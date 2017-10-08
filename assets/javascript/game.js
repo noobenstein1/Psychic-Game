@@ -1,11 +1,11 @@
-	//This is where the alphabet list is used to randomly pull a letter from
+	//This is where the alphabet list is created to randomly pull a letter from
 	var alphabet = 'abcdefghijklmnopqrstuvwxyz'.split('');
 	//This is the starting values for amount of attempts, wins, and losses
 	var wins = 0;
 	var losses = 0;
 	var userTries = 15;
 	var guess = "Guesses Used:";
-	//This ties it into the html and updates upon winning
+	//This ties it into the html and updates upon the corresponding element
 	var winsDOM = document.getElementById("wins");
 	var lossesDOM = document.getElementById("losses");
 	var triesDOM = document.getElementById("tries");
@@ -15,12 +15,12 @@
 	lossesDOM.innerHTML = "Losses: " + losses;
 	triesDOM.innerHTML = "Attempts Left: " + userTries;
 
-
+//this gathers a random value from the alphabet array
 var random = Math.floor(Math.random() * alphabet.length);
 
 	var computerChoice = alphabet[random];
 	console.log(computerChoice);
-
+//this creates the event whenever a key is detected.
 document.onkeyup = function (event) {
   var userGuess = event.key
 //lets store the key the user pressed to a var so we can use it other places
@@ -28,7 +28,8 @@ document.onkeyup = function (event) {
 //calls up an html element to display what input was detected on event key
 guessDOM.innerHTML +="  " + userGuess;
   userGuess
-//make sure we actually have the correct key
+
+//this is used to detect if the correct key was pressed
 
  if ((userTries > 0)&&(computerChoice === userGuess)) {
     //still has guesses left, AND (&&) they chose the right key, run the code inside this if statement. if either of these to boolean expresions is false, dont run the code inside
@@ -50,7 +51,7 @@ else if ((userTries >= 0) && (computerChoice !== userGuess)) {
     lossesDOM.innerHTML = "Losses: " + losses;
 
     reset()
-    
+  //this function tells reset which objects and elements to change, and what to change them to.  
   }
 function reset(){
 	random = Math.floor(Math.random() * alphabet.length);

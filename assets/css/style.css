@@ -29,6 +29,8 @@ body{
 .scoreboard{
 	font-size: 25px;
 	color: white;
+	width: 200px;
+	height: 200px;
 	
 }
 .explanation {
