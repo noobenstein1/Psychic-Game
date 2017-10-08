@@ -1,2 +1,2 @@
-# Psychic-Game
-Psychic letter guessing game for week 3 homework
+# Hangman-Game
+game for men that hang

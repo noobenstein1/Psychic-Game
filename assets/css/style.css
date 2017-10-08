@@ -1,0 +1,39 @@
+body{
+	background: url("../images/Pumpkins2.jpg");
+	background-repeat: no-repeat;
+	max-width: 1000px;
+	height: 642px;
+	font-size: 18px;
+	line-height: 34px;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica,
+		sans-serif;
+		color: #000;
+
+	
+}
+
+#badomen{
+	font-size: 50px;
+	background-color: #000;
+	color: white;
+	text-align: center;
+	padding: 20px;
+
+}
+
+.words{
+	background-color: #fff;
+
+}
+
+.scoreboard{
+	font-size: 25px;
+	color: white;
+	
+}
+.explanation {
+	font-size: 20px;
+	color: white;
+	
+	
+}
